@@ -61,6 +61,7 @@ const NoteArea = ({ itemSortables, notes }: { itemSortables: UniqueIdentifier[],
         console.log(e);
         setInputFocus(false);
     }
+
     function handleDragEnd(event: DragEndEvent) {
         const { active, over } = event;
 
@@ -76,7 +77,6 @@ const NoteArea = ({ itemSortables, notes }: { itemSortables: UniqueIdentifier[],
     function handleDragStart(event: DragStartEvent) {
         console.log("Drag start");
     }
-
 
     const closeNoteModal = () => {
         setShowNoteModal(false);
